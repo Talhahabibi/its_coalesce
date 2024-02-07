@@ -1,0 +1,63 @@
+steps:
+  REGION-4986b7c2-9eec-483d-a0a3-b61b1d4e9485:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SAMPLE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a4da9385-6df8-4ed1-8d15-c42fbf0fc294
+              stepCounter: 4986b7c2-9eec-483d-a0a3-b61b1d4e9485
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7ceb2acb-a0c5-4690-94e9-a0b561d82958
+              stepCounter: 4986b7c2-9eec-483d-a0a3-b61b1d4e9485
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 89380842-98aa-497a-bd60-d884395c350b
+              stepCounter: 4986b7c2-9eec-483d-a0a3-b61b1d4e9485
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 4986b7c2-9eec-483d-a0a3-b61b1d4e9485
