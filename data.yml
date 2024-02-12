@@ -4,7 +4,7 @@ jobs:
   Job-2:
     excludeSelector: ""
     id: 2
-    includeSelector: "{ location: SAMPLE name: NATION } OR { location: SAMPLE name: ORDERS } OR { location: SAMPLE name: REGION } OR { location: WORK name: STG_ORDERS } OR { location: WORK name: STG_REGION } OR { location: WORK name: STG_NATION }"
+    includeSelector: "{ location: SAMPLE name: NATION } OR { location: SAMPLE name: ORDERS } OR { location: SAMPLE name: REGION } OR { location: WORK name: STG_ORDERS } OR { location: WORK name: STG_REGION } OR { location: WORK name: STG_NATION } OR { location: WORK name: PSTG_NATION }"
     name: New Job
     steps: []
     subgraphs: []
